@@ -95,7 +95,11 @@ import Footer from "@/components/Footer.vue";
 
     .descHeading{
         font-size: 15px !important;
-        color:red !important;
+        
+    }
+    
+    .searchBar {
+        padding: 10px;
     }
 
    .questionItems{
@@ -105,6 +109,11 @@ import Footer from "@/components/Footer.vue";
     margin: 0 !important;
    }
 
+   .questionItems p{
+        padding:10px;
+        font-size: 13px;
+   };
+
    .bgBtn{
         font-size: 16px !important;
         margin:0 !important;
@@ -112,7 +121,7 @@ import Footer from "@/components/Footer.vue";
 
    .bottomImages{
     display: flex;
-    margin:10px !important;
+    margin:0px !important;
    }
    .bottomImages img{
         width:150px;
