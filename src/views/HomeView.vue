@@ -111,11 +111,11 @@ import Footer from "@/components/Footer.vue";
 
    .bottomImages{
     display: flex;
-    margin:0 !important;
+    margin:10px !important;
    }
    .bottomImages img{
-        width:200px;
-        height: 80px;
+        width:150px;
+        height: 50px;
    }
 
    
