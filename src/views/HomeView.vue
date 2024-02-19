@@ -95,6 +95,7 @@ import Footer from "@/components/Footer.vue";
 
     .descHeading{
         font-size: 15px !important;
+        color:red !important;
     }
 
    .questionItems{
