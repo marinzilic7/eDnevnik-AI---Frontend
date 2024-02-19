@@ -27,7 +27,7 @@ import Footer from "@/components/Footer.vue";
           width="25"
           height="25"
           fill="#056069"
-          class="bi bi-search position-absolute"
+          class="bi bi-search position-absolute searchIcon"
           viewBox="0 0 16 16"
           style="right: 20px; top: 50%; transform: translateY(-50%)"
         >
@@ -44,7 +44,7 @@ import Footer from "@/components/Footer.vue";
       <div class="col-12 col-md-5 col-sm-5 col-lg-3 col-xl-3 mt-3">
         <button class="btn text-light p-3 w-100 fs-4 mt-4 bgBtn">Pošalji upit</button>
       </div>
-      <p class="mt-2" style="color: #616161;">Imate poteškoća, javite nam se.</p>
+      <p class="mt-2 problemsHead" style="color: #616161;">Imate poteškoća, javite nam se.</p>
       <br>
       <br>
       <div class="mt-5 bottomImages">
@@ -102,6 +102,19 @@ import Footer from "@/components/Footer.vue";
         padding: 10px;
     }
 
+    .searchBar::placeholder{
+        font-size: 11px ;
+    }
+
+    .searchIcon{
+        width: 18px;
+        height: 18px;
+    }
+
+    .problemsHead{
+        font-size: 12px;
+    }
+
    .questionItems{
     display: flex;
     flex-direction: column;
@@ -115,8 +128,9 @@ import Footer from "@/components/Footer.vue";
    };
 
    .bgBtn{
-        font-size: 16px !important;
+        font-size: 15px !important;
         margin:0 !important;
+        padding:10px !important; 
    }
 
    .bottomImages{
