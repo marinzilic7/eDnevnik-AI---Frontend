@@ -150,9 +150,9 @@ import Footer from "@/components/Footer.vue";
   }
 
   .bgBtn {
-    font-size: 13px !important;
+    font-size: 15px !important;
     margin: 0 !important;
-    padding: 5px !important;
+    padding: 10px !important;
   }
 
   .bottomImages {
