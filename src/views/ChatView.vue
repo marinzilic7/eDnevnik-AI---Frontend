@@ -5,7 +5,7 @@ import Footer from "@/components/Footer.vue";
 
 <template>
   <Navbar />
-  <div class="container d-flex justify-content-center mt-5">
+  <div class="container d-flex justify-content-center mt-2">
     <div class="bg-light shadow-lg p-5">
       <div>
         <p>Pitanje:</p>
@@ -13,7 +13,7 @@ import Footer from "@/components/Footer.vue";
       </div>
       <div>
         <p>Odgovor:</p>
-        <p>
+        <p class="answer">
           Na izborniku koji se nalazi na lijevoj strani odabrat ćemo opciju
           Imenik. U otvorenom sučelju prikazani su svi učenici koji se nalaze u
           tom odjeljenju. Nakon otvaranja podataka o učeniku odaberemo sekciju
@@ -24,6 +24,7 @@ import Footer from "@/components/Footer.vue";
           spremljena. Unesena bilješka može se uređivati i brisati. Također,
           ukoliko želite možete i pogledati video upute:
         </p>
+        <p class="show-more" style="text-decoration: underline; cursor: pointer;">Prikazi vise </p>
         <p class="text-danger">
           https://www.youtube.com/watch?v=gSUUDVs5d4A
         </p>
@@ -61,6 +62,22 @@ import Footer from "@/components/Footer.vue";
   <Footer />
 </template>
 
+
+<script>
+    $(document).ready(function () {
+        $('.show-more').on('click', function () {
+            var description = $(this).siblings('.answer');
+            description.toggleClass('expanded');
+
+            if (description.hasClass('expanded')) {
+                $(this).text('Show less');
+            } else {
+                $(this).text('Show more');
+            }
+        });
+    });
+</script>
+
 <style scoped>
 h6,
 p {
@@ -83,6 +100,18 @@ p {
     padding: 10px !important;
   }
 
+  .answer{
+    overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+  }
+
+  .expanded {
+        display: block;
+        -webkit-line-clamp: unset;
+    }
   .like {
     display: flex;
     justify-content: center !important;
