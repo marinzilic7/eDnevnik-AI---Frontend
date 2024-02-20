@@ -1,7 +1,15 @@
 <template>
   <nav class="navbar navbar-expand bg-transpaernt">
     <div class="container-fluid">
-      <img class="imageLogo" src="../assets/images/logo.png" width="300px" height="80px" alt="">
+      <router-link to="/">
+        <img
+          class="imageLogo"
+          src="../assets/images/logo.png"
+          width="300px"
+          height="80px"
+          alt=""
+        />
+      </router-link>
 
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
@@ -18,18 +26,15 @@
 <script setup></script>
 
 <style scoped>
-
-.p1, .p2{
-    color:#056069;
+.p1,
+.p2 {
+  color: #056069;
 }
 
-@media only screen and (max-width: 576px){
-   .imageLogo{
-         width: 200px;
-         height: 60px;
-   }
-
-   
+@media only screen and (max-width: 576px) {
+  .imageLogo {
+    width: 200px;
+    height: 60px;
+  }
 }
-
 </style>
