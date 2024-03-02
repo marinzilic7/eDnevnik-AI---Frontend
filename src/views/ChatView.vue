@@ -70,9 +70,9 @@ import Footer from "@/components/Footer.vue";
             description.toggleClass('expanded');
 
             if (description.hasClass('expanded')) {
-                $(this).text('Show less');
+                $(this).text('Prikazi manje');
             } else {
-                $(this).text('Show more');
+                $(this).text('Prikazi vise');
             }
         });
     });
